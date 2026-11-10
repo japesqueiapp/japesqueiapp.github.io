@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#035EF7">
+  <title>JaPesquei - Em breve</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, #035EF7, #002A76);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin-bottom: 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #13A65B;
+      border-radius: 30px;
+      padding: 9px 18px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #E0EAFF;
+    }
+
+    .card {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+    }
+
+    .card p { margin: 0; }
+
+    footer {
+      margin-top: 45px;
+      font-size: 12px;
+      color: #C8D8FF;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="logo">JaPesquei</div>
+
+    <div class="badge">EM BREVE NAS LOJAS</div>
+
+    <h1>Sua próxima pescaria começa aqui!</h1>
+
+    <p>
+      Registre suas capturas, participe de rankings,
+      desafios, torneios e aproveite benefícios
+      exclusivos para pescadores.
+    </p>
+
+    <div class="card">
+      <p>
+        Estamos preparando tudo para o lançamento.
+        Em breve, disponível na App Store
+        e no Google Play!
+      </p>
+    </div>
+
+    <footer>
+      JaPesquei &copy; 2026
+    </footer>
+  </main>
+
+  <script>
+    // CONFIGURAÇÃO DAS LOJAS
+    // Preencher somente após a publicação.
+
+    const APP_STORE_URL = "";
+    const GOOGLE_PLAY_URL = "";
+
+    function redirecionar() {
+      const agente = navigator.userAgent;
+
+      const ios = /iPhone|iPad|iPod/i.test(agente);
+      const android = /Android/i.test(agente);
+
+      if (ios && APP_STORE_URL) {
+        window.location.replace(APP_STORE_URL);
+      } else if (android && GOOGLE_PLAY_URL) {
+        window.location.replace(GOOGLE_PLAY_URL);
+      }
+    }
+
+    redirecionar();
+  </script>
+</body>
+</html>
